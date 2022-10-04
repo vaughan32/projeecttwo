@@ -1,0 +1,34 @@
+.center{
+    text-align:center;
+    font-size:14px;
+}
+.moveCenter{
+    text-align:center;
+}
+.centers{
+    text-align:center;
+    font-size:14px;
+    color: #000000!important;
+}
+.hover:hover{
+    cursor:pointer;
+    color:green!important;
+}
+.hover{
+    color:rgb(31, 116, 31);
+}
+
+.hovers{
+    color:rgb(231, 231, 57);
+}
+.hovers:hover{
+    color:rgb(231, 231, 57);
+}
+.deletehovers{
+    color:#ff0000;
+    
+}
+.deletehovers:hover{
+    color:#ff0000;
+    cursor:pointer;
+}

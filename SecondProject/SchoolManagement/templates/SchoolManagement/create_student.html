@@ -1,0 +1,25 @@
+{% extends 'SchoolManagement/base.html' %}
+{% block content %}
+<h3 class="m-4 center">All Students</h3>
+{% if success %}
+<h5 class="alert alert-success ms-4 me-4 center"><a href="{% url 'index' %}">Students Records</a>Student Record Added Successfully</h5>
+{% else %}
+<div class="row justify-content-center">
+<div class="col-6">
+    <div class="card bg-light mb-3">
+        <div class="card-header center">
+            <i class="fa-solid fa-address-card fa-lg"></i>
+            Add A Student</div>
+        <div class="card-body">
+            <form action=""method="POST">
+             {% csrf_token %}
+            {{create_student_form.as_p}}
+            <button  type="submit" class="btn btn-primary me-1">Submit</button>
+            <a href="{% url 'index' %}" class="btn btn-secondary">Cancel</a>
+         </form>
+        </div>
+      </div>
+</div>
+</div>
+{% endif %}
+{% endblock content %}
